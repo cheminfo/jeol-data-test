@@ -2,7 +2,8 @@ const { readFileSync } = require("fs");
 const { join } = require("path");
 
 let path = join(__dirname, "./data/Rutin_NMRdata_400MHz_DMSOd6_Jeol/");
-const Rutin = {
+
+exports.Rutin = {
   path: path,
   experiment: {
     proton: readFileSync(
@@ -23,4 +24,3 @@ const Rutin = {
   },
 };
 
-export { Rutin };
