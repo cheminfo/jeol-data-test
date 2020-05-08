@@ -9,6 +9,9 @@ exports.Rutin = {
     proton: readFileSync(
       join(path, "Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf")
     ),
+    processedProton: readFileSync(
+      join(__dirname, "data", "8PA_SynLK_5360u150uDMSO_snc1811_qH_SpinOn-1-2.jdf")
+    ),
     carbon: readFileSync(
       join(path, "Rutin_3080ug200uL_DMSOd6_13CNMR_400MHz_Jeol.jdf")
     ),
