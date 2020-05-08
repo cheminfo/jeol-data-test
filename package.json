@@ -1,7 +1,8 @@
 {
   "name": "jeol-data-test",
   "version": "0.1.0",
-  "description": "",
+  "description": "provides JEOL NMR data files for testing purposes",
+  "keywords": ["magnetic resonance", "nmr", "jeol", "dataset"],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
