@@ -1,6 +1,6 @@
 {
   "name": "jeol-data-test",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "provides JEOL NMR data files for testing purposes",
   "keywords": ["magnetic resonance", "nmr", "jeol", "dataset"],
   "main": "index.js",
