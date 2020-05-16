@@ -2,11 +2,22 @@
   "name": "jeol-data-test",
   "version": "0.1.2",
   "description": "provides JEOL NMR data files for testing purposes",
-  "keywords": ["magnetic resonance", "nmr", "jeol", "dataset"],
+  "keywords": [
+    "magnetic resonance",
+    "nmr",
+    "jeol",
+    "dataset"
+  ],
   "main": "index.js",
+  "files": [
+    "data"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "author": "Julien Wist",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "recursive-readdir-synchronous": "0.0.4"
+  }
 }
