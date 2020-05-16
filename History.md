@@ -1,3 +1,12 @@
+# [0.2.0](https://github.com/cheminfo/jeol-data-test/compare/v0.1.2...v0.2.0) (2020-05-16)
+
+
+### Features
+
+* add more examples and allows individual import ([c1d884e](https://github.com/cheminfo/jeol-data-test/commit/c1d884ece5dd42cefc27ac1e23502cedba3a1545))
+
+
+
 ## [0.1.2](https://github.com/cheminfo/jeol-data-test/compare/v0.1.1...v0.1.2) (2020-05-16)
 
 
