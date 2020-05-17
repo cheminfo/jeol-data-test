@@ -1,8 +1,8 @@
 const { readFileSync } = require("fs");
 const { join } = require("path");
 const recursive = require('recursive-readdir-synchronous');
-const toc = require('./toc.json');
 
+const toc = JSON.parse(readFileSync(join(__dirname, 'toc.json')));
 let experiments = {};
 for (let file of toc){
   let name = file.filename;
