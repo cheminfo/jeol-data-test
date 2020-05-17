@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/cheminfo/jeol-data-test/compare/v0.2.0...v0.2.1) (2020-05-17)
+
+
+### Bug Fixes
+
+* export ([064d310](https://github.com/cheminfo/jeol-data-test/commit/064d31085766ac134d41788f542a6bdb54667f8c))
+
+
+
 # [0.2.0](https://github.com/cheminfo/jeol-data-test/compare/v0.1.2...v0.2.0) (2020-05-16)
 
 
