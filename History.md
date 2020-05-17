@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/cheminfo/jeol-data-test/compare/v0.2.1...v0.2.2) (2020-05-17)
+
+
+### Bug Fixes
+
+* export toc.json ([44dc23a](https://github.com/cheminfo/jeol-data-test/commit/44dc23a60333448956813c10cbddc381a19b600e))
+
+
+
 ## [0.2.1](https://github.com/cheminfo/jeol-data-test/compare/v0.2.0...v0.2.1) (2020-05-17)
 
 
