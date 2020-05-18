@@ -6,7 +6,7 @@ provides JEOL NMR data files for testing purposes.
 
 ```js
 import { experiments } from 'jeol-data-test';
-console.log(experiment); // to get a list
+console.log(Object.keys(experiment)); // to get a list
 console.log(experiments['Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf']); // to get a buffer with proton data
 
 ```
