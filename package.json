@@ -23,6 +23,6 @@
   "author": "Julien Wist",
   "license": "MIT",
   "dependencies": {
-    "recursive-readdir-synchronous": "0.0.4"
+    "filelist-utils": "^0.5.0"
   }
 }

@@ -1,12 +1,10 @@
-const { readFileSync } = require("fs");
 const { join } = require("path");
 
-const toc = JSON.parse(readFileSync(join(__dirname, 'toc.json')));
-let experiments = {};
-for (let file of toc){
-  let name = file.filename;
-  experiments[name] = readFileSync(join(__dirname, file.url));
+const { fileListFromPath } = require("filelist-utils");
+
+function getData() {
+  return fileListFromPath(join(__dirname, "./data/"));
 }
 module.exports = {
-  experiments,
+  getData,
 };
