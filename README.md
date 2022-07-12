@@ -5,9 +5,13 @@ provides JEOL NMR data files for testing purposes.
 ## usage
 
 ```js
-import { experiments } from 'jeol-data-test';
-console.log(Object.keys(experiment)); // to get a list
-console.log(experiments['Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf']); // to get a buffer with proton data
+import { jeol } from 'jeol-data-test';
+const jeolData = jeol();
+console.log(jeolData.list()); // to get a list of file names
+console.log(jeolData.getFileList('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf')) string | string[] to get an array of fileList
+console.log(
+  jeolData.get('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf')
+); // string | string[] to get a promise with an array of buffers.
 
 ```
 ## acknowledgements

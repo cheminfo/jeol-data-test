@@ -1,12 +1,27 @@
-const { readFileSync } = require("fs");
 const { join } = require("path");
+const { fileListFromPath } = require("filelist-utils");
 
-const toc = JSON.parse(readFileSync(join(__dirname, 'toc.json')));
-let experiments = {};
-for (let file of toc){
-  let name = file.filename;
-  experiments[name] = readFileSync(join(__dirname, file.url));
-}
+const path = join(__dirname, "./data/");
+const fileList = fileListFromPath(path);
+
+const getList = () => fileList.map((d) => d.name);
+
+const getFileList = (name) => {
+  const result = fileList.filter((d) => d.name === name);
+
+  if (result.length < 1) {
+    throw new Error(`There is not a file with name: ${name}`);
+  }
+
+  return result[0];
+};
+
+const getData = (name) => {
+  return getFileList(name).arrayBuffer();
+};
+
 module.exports = {
-  experiments,
+  getList,
+  getData,
+  getFileList,
 };
