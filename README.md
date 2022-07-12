@@ -8,7 +8,10 @@ provides JEOL NMR data files for testing purposes.
 import { jeol } from 'jeol-data-test';
 const jeolData = jeol();
 console.log(jeolData.list()); // to get a list of file names
-console.log(jeolData.get('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf')); // ol array of names to get the fileList.
+console.log(jeolData.getFileList('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf')) string | string[] to get an array of fileList
+console.log(
+  jeolData.get('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf')
+); // string | string[] to get a promise with an array of buffers.
 
 ```
 ## acknowledgements

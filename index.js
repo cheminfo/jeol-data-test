@@ -1,29 +1,27 @@
 const { join } = require("path");
-
 const { fileListFromPath } = require("filelist-utils");
 
 const path = join(__dirname, "./data/");
+const fileList = fileListFromPath(path);
 
-function jeol() {
-  const fileList = fileListFromPath(path);
+const getList = () => fileList.map((d) => d.name);
 
-  const list = () => fileList.map((d) => d.name);
+const getFileList = (name) => {
+  const result = fileList.filter((d) => d.name === name);
 
-  const get = async (names) => {
-    const arrayNames = !Array.isArray(names) ? [names] : names;
-    const result = [];
-    for (let name of arrayNames) {
-      result.push(
-        ...fileList
-        .filter((d) => d.name === name)
-      )
-    }
-    return result;
+  if (result.length < 1) {
+    throw new Error(`There is not a file with name: ${name}`);
   }
 
-  return { list, get, fileList };
-}
+  return result[0];
+};
+
+const getData = (name) => {
+  return getFileList(name).arrayBuffer();
+};
 
 module.exports = {
-  jeol
+  getList,
+  getData,
+  getFileList,
 };
