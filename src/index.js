@@ -5,9 +5,11 @@ import { fileListFromPath } from 'filelist-utils';
 const path = resolve('../data/');
 const fileList = fileListFromPath(path);
 
-export const getList = () => fileList.map((d) => d.name);
+export function getList() {
+  return fileList.map((d) => d.name);
+}
 
-export const getFileList = (name) => {
+export function getFileList(name) {
   const result = fileList.filter((d) => d.name === name);
 
   if (result.length < 1) {
@@ -15,8 +17,8 @@ export const getFileList = (name) => {
   }
 
   return result[0];
-};
+}
 
-export const getData = (name) => {
+export function getData(name) {
   return getFileList(name).arrayBuffer();
-};
+}
