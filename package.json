@@ -38,7 +38,7 @@
     "prettier": "prettier --check src",
     "prettier-write": "prettier --write src",
     "test": "npm run test-only && npm run eslint && npm run prettier",
-    "test-only": "jest --coverage"
+    "test-only": "npm run prepack && jest --coverage"
   },
   "author": "Julien Wist",
   "license": "MIT",
