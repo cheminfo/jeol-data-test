@@ -1,14 +1,8 @@
-import json from '@rollup/plugin-json';
-
-const config = {
+export default {
   input: 'src/index.js',
   output: {
-    file: 'lib/index.js',
     format: 'cjs',
-    exports: 'named',
+    file: 'lib/index.js',
   },
-  plugins: [json()],
-  external: ['filelist-utils'],
+  external: ['url', 'path', 'filelist-utils']
 };
-
-export default config;
