@@ -21,16 +21,6 @@
     "dataset"
   ],
   "homepage": "https://github.com/cheminfo/jeol-data-test#readme",
-  "prettier": {
-    "arrowParens": "always",
-    "semi": true,
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "all"
-  },
-  "jest": {
-    "testEnvironment": "node"
-  },
   "scripts": {
     "eslint": "eslint src",
     "eslint-fix": "npm run eslint -- --fix",
@@ -38,7 +28,7 @@
     "prettier": "prettier --check src",
     "prettier-write": "prettier --write src",
     "test": "npm run test-only && npm run eslint && npm run prettier",
-    "test-only": "npm run prepack && jest --coverage"
+    "test-only": "jest --coverage"
   },
   "author": "Julien Wist",
   "license": "MIT",
@@ -51,7 +41,6 @@
     "rollup": "^2.72.1"
   },
   "dependencies": {
-    "filelist-utils": "^0.5.0",
-    "url": "^0.11.0"
+    "filelist-utils": "^0.5.0"
   }
 }

@@ -1,4 +1,4 @@
-const { getList } = require('../../lib/index');
+import { getList } from '../index';
 
 describe('simple test', () => {
   it('check one name', () => {

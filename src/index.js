@@ -1,11 +1,8 @@
-import { join, resolve } from 'path';
-import * as url from 'url';
+import { join } from 'path';
 
 import { fileListFromPath } from 'filelist-utils';
 
-const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
-
-const path = resolve(join(__dirname, '../data/'));
+const path = join(__dirname, '../data/');
 const fileList = fileListFromPath(path);
 
 export function getList() {
