@@ -7,6 +7,23 @@
 
 
 
+## [0.3.0](https://github.com/cheminfo/jeol-data-test/compare/v0.2.3...v0.3.0) (2022-07-22)
+
+
+### ⚠ BREAKING CHANGES
+
+* export functions that export a file list or data
+
+### Features
+
+* export functions that export a file list or data ([4af273a](https://github.com/cheminfo/jeol-data-test/commit/4af273a4a8bc1050adae6e1a21806c3f68909092))
+
+
+### Bug Fixes
+
+* remove docs ([002ac02](https://github.com/cheminfo/jeol-data-test/commit/002ac02ca2d54f8afe59d0609930fe8b9dca3c54))
+* remove unused lines ([8acacf9](https://github.com/cheminfo/jeol-data-test/commit/8acacf9a2d7b19c8481718963f2a85666e1f09f0))
+
 ## [0.2.2](https://github.com/cheminfo/jeol-data-test/compare/v0.2.1...v0.2.2) (2020-05-17)
 
 
@@ -61,6 +78,3 @@
 
 
 ## 0.0.2 (2020-05-07)
-
-
-
