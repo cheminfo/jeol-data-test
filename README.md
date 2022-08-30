@@ -7,10 +7,8 @@ provides JEOL NMR data files for testing purposes.
 ```js
 import { getData, getFileList, getNameList } from 'jeol-data-test';
 console.log(getNameList()); // to get a list of file names
-console.log(getFileList('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf')) // to get an array of fileList
-console.log(
-  getData('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf')
-); // to get a promise of the arrayBuffer of the file.
+console.log(getFileList('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf'));// to get an array of fileList
+const buffer = getData('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf');// to get a promise of the arrayBuffer of the file.
 
 ```
 ## acknowledgements
