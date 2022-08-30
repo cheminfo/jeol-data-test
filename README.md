@@ -5,10 +5,15 @@ provides JEOL NMR data files for testing purposes.
 ## usage
 
 ```js
-import { getData, getFileList, getNameList } from 'jeol-data-test';
-console.log(getNameList()); // to get a list of file names
-console.log(getFileList('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf'));// to get an array of fileList
-const buffer = getData('Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf');// to get a promise of the arrayBuffer of the file.
+import { getData, getFileList, getList } from "jeol-data-test";
+const listOfFilenames = await getList();
+
+const filename = "Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf";
+
+const file = await getFile(filename);
+const jeolBuffer = await file.arrayBuffer();
+//or
+const buffer = await getData(filename);
 
 ```
 ## acknowledgements
