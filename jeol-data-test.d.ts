@@ -1,4 +1,4 @@
-import { PartialFile } from 'filelist-utils';
+import { PartialFile, PartialFileList } from 'filelist-utils';
 
 export function getList(): Promise<string[]>;
 
