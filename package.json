@@ -4,8 +4,10 @@
   "description": "provides JEOL NMR data files for testing purposes",
   "main": "lib/index.js",
   "module": "src/index.js",
+  "types": "jeol-data-test.d.ts",
   "files": [
-    "data/*"
+    "data/*",
+    "jeol-data-test.d.ts"
   ],
   "repository": {
     "type": "git",

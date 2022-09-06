@@ -19,22 +19,26 @@ async function loadFileList(path) {
   return cache[path];
 }
 
-export async function getList() {
-  const fileList = await loadFileList(path);
-  return fileList.map((d) => d.name);
+export function getFileList() {
+  return loadFileList(path);
 }
 
-export async function getFileList(name) {
-  const fileList = await loadFileList(path);
-  const result = fileList.filter((d) => d.name === name);
+export async function getList() {
+  const fileList = await getFileList();
+  return fileList.map((file) => file.name);
+}
 
-  if (result.length < 1) {
+export async function getFile(name) {
+  const fileList = await getFileList();
+  const file = fileList.find((d) => d.name === name);
+
+  if (!file) {
     throw new Error(`There is not a file with name: ${name}`);
   }
 
-  return result[0];
+  return file;
 }
 
 export function getData(name) {
-  return getFileList(name).arrayBuffer();
+  return getFile(name).arrayBuffer();
 }
