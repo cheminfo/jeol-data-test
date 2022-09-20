@@ -7,6 +7,19 @@
 
 
 
+## [0.4.0](https://github.com/cheminfo/jeol-data-test/compare/v0.3.0...v0.4.0) (2022-09-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* export more specific functions (#7)
+* async functions
+
+### Features
+
+* async functions ([6a66797](https://github.com/cheminfo/jeol-data-test/commit/6a66797efe1e7376bc92bd435081a47ad65381c6))
+* export more specific functions ([#7](https://github.com/cheminfo/jeol-data-test/issues/7)) ([c29591e](https://github.com/cheminfo/jeol-data-test/commit/c29591e0bb5bdd37cd233990bfeace4e7bc69d27))
+
 ## [0.3.0](https://github.com/cheminfo/jeol-data-test/compare/v0.2.3...v0.3.0) (2022-07-22)
 
 
