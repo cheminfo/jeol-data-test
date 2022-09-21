@@ -39,6 +39,6 @@ export async function getFile(name) {
   return file;
 }
 
-export function getData(name) {
-  return getFile(name).arrayBuffer();
+export async function getData(name) {
+  return (await getFile(name)).arrayBuffer();
 }
