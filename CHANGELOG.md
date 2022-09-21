@@ -7,6 +7,13 @@
 
 
 
+## [0.4.1](https://github.com/cheminfo/jeol-data-test/compare/v0.4.0...v0.4.1) (2022-09-21)
+
+
+### Bug Fixes
+
+* getData ([172e88d](https://github.com/cheminfo/jeol-data-test/commit/172e88dbb869983a34879ab69d1d2159183f3add))
+
 ## [0.4.0](https://github.com/cheminfo/jeol-data-test/compare/v0.3.0...v0.4.0) (2022-09-06)
 
 
