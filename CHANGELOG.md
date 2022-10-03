@@ -7,6 +7,17 @@
 
 
 
+## [0.5.0](https://github.com/cheminfo/jeol-data-test/compare/v0.4.1...v0.5.0) (2022-10-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* use FileCollection (#10)
+
+### Features
+
+* use FileCollection ([#10](https://github.com/cheminfo/jeol-data-test/issues/10)) ([7bae6b4](https://github.com/cheminfo/jeol-data-test/commit/7bae6b40a0c2a494a3cfc6d0c007cc7cab8a79ee))
+
 ## [0.4.1](https://github.com/cheminfo/jeol-data-test/compare/v0.4.0...v0.4.1) (2022-09-21)
 
 
