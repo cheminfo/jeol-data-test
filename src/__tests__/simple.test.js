@@ -1,4 +1,4 @@
-import { getFile, getFileList, getList } from '../index';
+import { getFile, getFileCollection, getList } from '../index';
 
 describe('simple test', () => {
   const filename = '8PA_SynLK_5360u150uDMSO_snc1811_qH_spinOff-1-2.jdf';
@@ -11,8 +11,8 @@ describe('simple test', () => {
     const file = await getFile(filename);
     expect(file.name).toBe(filename);
   });
-  it('check getFileList', async () => {
-    const fileList = await getFileList();
-    expect(fileList.map((f) => f.name)).toContain(filename);
+  it('check getFileCollection', async () => {
+    const fileCollection = await getFileCollection();
+    expect(fileCollection.files.map((f) => f.name)).toContain(filename);
   });
 });
