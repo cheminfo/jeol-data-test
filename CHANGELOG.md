@@ -7,6 +7,13 @@
 
 
 
+## [0.5.1](https://github.com/cheminfo/jeol-data-test/compare/v0.5.0...v0.5.1) (2023-05-15)
+
+
+### Bug Fixes
+
+* add raw fluorine n phosphorus 1D data ([70bf716](https://github.com/cheminfo/jeol-data-test/commit/70bf71612900fd158c3e482af86f48655ca86352))
+
 ## [0.5.0](https://github.com/cheminfo/jeol-data-test/compare/v0.4.1...v0.5.0) (2022-10-03)
 
 
