@@ -7,6 +7,17 @@
 
 
 
+## [1.0.0](https://github.com/cheminfo/jeol-data-test/compare/v0.5.2...v1.0.0) (2025-07-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* esm-only and only export `jeolFiles` as `DataTestApi` ([#14](https://github.com/cheminfo/jeol-data-test/issues/14))
+
+### Code Refactoring
+
+* esm-only and only export `jeolFiles` as `DataTestApi` ([#14](https://github.com/cheminfo/jeol-data-test/issues/14)) ([fc241f8](https://github.com/cheminfo/jeol-data-test/commit/fc241f8a35885e4bb95d163822cb5a75a84f9c09))
+
 ## [0.5.2](https://github.com/cheminfo/jeol-data-test/compare/v0.5.1...v0.5.2) (2024-08-16)
 
 
