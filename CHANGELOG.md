@@ -7,6 +7,17 @@
 
 
 
+## [2.0.0](https://github.com/cheminfo/jeol-data-test/compare/v1.0.0...v2.0.0) (2026-03-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* consumers using the "main" field to resolve the package entry point must use the "exports" field instead.
+
+### Code Refactoring
+
+* use exports field and update dependencies ([9ad5cc2](https://github.com/cheminfo/jeol-data-test/commit/9ad5cc2fdda3af7e0c28aa9d1f33495d8ec9ed5e))
+
 ## [1.0.0](https://github.com/cheminfo/jeol-data-test/compare/v0.5.2...v1.0.0) (2025-07-23)
 
 
