@@ -1,23 +1,24 @@
 # jeol-data-test
 
-provides JEOL NMR data files for testing purposes.
+Provides JEOL NMR data files for testing purposes.
 
-## usage
+## Usage
 
-```js
+```ts
 import { jeolFiles } from 'jeol-data-test';
 
 const file = await jeolFiles.getFile(
   'Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf',
 );
 const jeolBuffer = await file.buffer();
-//or
+
+// or directly get the buffer
 const jeolBuffer = await jeolFiles.getData(
   'Rutin_3080ug200uL_DMSOd6_qHNMR_400MHz_Jeol.jdf',
 );
 ```
 
-## acknowledgements
+## Acknowledgements
 
 The original data were found [here](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZAZDNM) thanks to Jonathan and Guido.
 

@@ -44,3 +44,5 @@ dist
 nodeScript.js
 
 docs
+.claude
+.DS_Store
